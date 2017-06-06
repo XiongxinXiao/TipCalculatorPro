@@ -1,13 +1,16 @@
 <resources>
     <string name="app_name">Tip Calculator Pro</string>
-    <string name= "welcome">Welcome to Tip Calculator</string>
-    <string name= "billAmount">Bill Amount</string>
-    <string name= "tipPercentage">Tip Percentage</string>
-    <string name= "numberOfPeople">Number of People</string>
-    <string name= "caculate">Caculate</string>
-    <string name= "totalAmount">Total Amount</string>
-
-
-
+    <string name="welcome">Welcome to Tip Calculator</string>
+    <string name="billAmount">Bill Amount</string>
+    <string name="tipPercentage">Tip Percentage</string>
+    <string name="numberOfPeople">Num of People</string>
+    <string name="caculate">Caculate</string>
+    <string name="totalAmount">Total Amount</string>
+    <string name="totalTip">Total Tip</string>
+    <string name="tipPerPerson">Tip Per Person</string>
+    <string name="setting">Setting</string>
+    <string name="defaultTipPercent">Default Tip Percent</string>
+    <string name="currency">Currency</string>
+    <string name="saveTipPercent">Save Tip Percent</string>
 
 </resources>
