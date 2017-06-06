@@ -66,7 +66,7 @@
         android:textStyle="italic"
         android:textColor="@color/textColor"
         android:layout_marginTop="8dp"
-        android:layout_below="@+id/bill_value"
+        android:layout_below="@+id/billValue"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
@@ -106,16 +106,16 @@
         android:id="@+id/percentageValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView3"
         android:background="#ff0"
         android:inputType="numberDecimal"
-        android:max="100" />
+        android:max="100"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:id="@+id/bill_value"
+        android:id="@+id/billValue"
         android:background="#ff0"
         android:inputType="numberDecimal"
         android:layout_below="@+id/textView2"

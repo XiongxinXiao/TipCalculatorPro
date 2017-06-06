@@ -23,8 +23,20 @@ public class RatingActivity extends AppCompatActivity {
         rb.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
                 Float tip = 10 + (rating*2);
-                tipValue.setText(String.valueOf(tip) + "%");
+                tipValue.setText(removeTrailingZero(String.valueOf(tip) + "%"));
             }
         });
+    }
+
+    public String removeTrailingZero(String formattingInput) {
+        if (!formattingInput.contains(".")) {
+            return formattingInput;
+        }
+        int dotPosition = formattingInput.indexOf(".");
+        String newValue = formattingInput.substring(dotPosition, formattingInput.length());
+        if (newValue.startsWith(".0")) {
+            return formattingInput.substring(0, dotPosition);
+        }
+        return formattingInput;
     }
 }
